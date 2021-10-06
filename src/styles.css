@@ -1,0 +1,63 @@
+.container {
+  font-family: "STIX Two Text", serif;
+}
+.weatherapp {
+  border: 1px solid;
+  padding: 15px;
+  margin: 20px auto;
+  margin-top: 60px;
+  max-width: 800px;
+  border-radius: 20px;
+}
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+form {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px 40px;
+  background-color: royalblue;
+  border-radius: 10px;
+  border-color: royalblue;
+  display: inline-block;
+}
+h2 {
+  margin: 20px 50px;
+  font-size: 40px;
+}
+li {
+  list-style: none;
+  display: inline;
+  position: relative;
+  top: -12px;
+}
+.whole-degrees {
+  position: relative;
+  top: -22px;
+  right: -60px;
+}
+.temperature {
+  font-size: 70px;
+}
+.units {
+  position: relative;
+  top: -30px;
+  right: 10px;
+  font-size: 20px;
+}
+
+.forecast-weather {
+  position: relative;
+  right: -35px;
+}
+.forecast-day,
+.forecast-temperature {
+  font-size: 25px;
+}

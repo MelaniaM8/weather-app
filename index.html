@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/369c68a594.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weatherapp">
+        <h1>Weather</h1>
+        <form id="search-form">
+          <input
+            type="text"
+            class="form-control"
+            id="city-input"
+            placeholder="Type City Name"
+          />
+          <input class="button" type="submit" value="Search" />
+          <button
+            class="button"
+            type="button"
+            id="current-location-button"
+            class="btn btn-primary"
+          >
+            Current
+          </button>
+        </form>
+        <h2 id="city">Tokyo</h2>
+        <ul>
+          <li id="day">Wed,</li>
+          <li>
+            <span id="month"> August </span>
+            <span id="date"> 14,</span>
+          </li>
+          <li>
+            <span id="hour"> 12: </span>
+            <span id="minutes"> 33 </span>
+          </li>
+        </ul>
+        <div class="whole-degrees">
+          <span class="temperature" id="temperature"> 10 </span>
+          <span class="units">
+            <a href="#" id="celsius-link"> ºC </a>|
+            <a href="#" id="fahrenheit-link"> F </a>
+          </span>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>Humidity: <span id="humidity"> 7 %</span></li>
+            <li>Wind: <span id="wind">8</span>km/h</li>
+          </ul>
+        </div>
+        <div class="row forecast-weather">
+          <div class="col-2">
+            <p class="forecast-day">Mon</p>
+            <img src="#" class="icon-temperature" />
+            <div class="forecast-temperature">12º</div>
+          </div>
+          <div class="col-2">
+            <div class="col-2">
+              <p class="forecast-day">Tue</p>
+              <img src="#" class="icon-temperature" />
+              <div class="forecast-temperature">12º</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="col-2">
+              <p class="forecast-day">Wed</p>
+              <img src="#" class="icon-temperature" />
+              <div class="forecast-temperature">12º</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="col-2">
+              <p class="forecast-day">Thu</p>
+              <img src="#" class="icon-temperature" />
+              <div class="forecast-temperature">12º</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="col-2">
+              <p class="forecast-day">Fri</p>
+              <img src="#" class="icon-temperature" />
+              <div class="forecast-temperature">12º</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="col-2">
+              <p class="forecast-day">Sat</p>
+              <img src="#" class="icon-temperature" />
+              <div class="forecast-temperature">12º</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
