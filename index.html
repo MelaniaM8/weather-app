@@ -47,27 +47,30 @@
         </form>
         <h2 id="city">Tokyo</h2>
         <ul>
-          <li id="day">Wed,</li>
-          <li>
+          <li class="date" id="day">Wed,</li>
+          <li class="date">
             <span id="month"> August </span>
             <span id="date"> 14,</span>
           </li>
-          <li>
+          <li class="date">
             <span id="hour"> 12: </span>
             <span id="minutes"> 33 </span>
           </li>
         </ul>
+        <div id="description">
+          Clear Sky 
+        </div>
         <div class="whole-degrees">
           <span class="temperature" id="temperature"> 10 </span>
           <span class="units">
-            <a href="#" id="celsius-link"> ºC </a>|
+            <a href="#" id="celsius-link" class="active"> ºC </a>| 
             <a href="#" id="fahrenheit-link"> F </a>
           </span>
         </div>
         <div class="col-6">
-          <ul>
-            <li>Humidity: <span id="humidity"> 7 %</span></li>
-            <li>Wind: <span id="wind">8</span>km/h</li>
+          <ul >
+            <li class="weather-specifications">Humidity: <span id="humidity"> 7 %</span></li>
+            <li class="weather-specifications">Wind: <span id="wind">8</span>km/h</li>
           </ul>
         </div>
         <div class="row forecast-weather">

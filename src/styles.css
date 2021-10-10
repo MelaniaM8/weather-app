@@ -32,32 +32,56 @@ h2 {
   margin: 20px 50px;
   font-size: 40px;
 }
-li {
+.date {
   list-style: none;
   display: inline;
   position: relative;
   top: -12px;
 }
+
+#description{
+  position: relative;
+  top: -12px;
+  right: -60px;
+  text-transform: capitalize;
+
+}
+.weather-specifications{
+list-style: none;
+position: relative;
+top: -130px;  
+right:-400px;
+}
+
 .whole-degrees {
   position: relative;
   top: -22px;
-  right: -60px;
+  right: -130px;
+  
 }
+.whole-degrees .active{
+color: black;
+cursor: default;
+text-decoration: none;
+}
+
 .temperature {
   font-size: 70px;
 }
 .units {
   position: relative;
   top: -30px;
-  right: 10px;
+  right: 5px;
   font-size: 20px;
 }
 
 .forecast-weather {
   position: relative;
   right: -35px;
+ 
 }
 .forecast-day,
 .forecast-temperature {
   font-size: 25px;
 }
+
