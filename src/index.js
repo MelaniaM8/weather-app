@@ -45,9 +45,8 @@ function displayWeatherCondition(response) {
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
   document.querySelector("#description").innerHTML = response.data.weather[0].description;
   let iconElement = document.quertSelector("#icon");
-  iconElemement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}d@2x.png`);
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}d@2x.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
-
   celsiusTemperature = response.data.main.temp;
 }
 
@@ -82,15 +81,15 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 function convertToFahrenheit(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
+  let temperatureElement = document.querySelector("#temperature");
   let fahrenheitTemperature = (celsiusTemperature  * 9) / 5 + 32; 
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 function convertCelsius(event){
-  event.preventDefault();
+event.preventDefault();
 celsiusLink.classList.add("active");
 fahrenheitLink.classList.remove("active");
 let temperatureElement = document.querySelector("#temperature");
