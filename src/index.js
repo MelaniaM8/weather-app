@@ -37,6 +37,25 @@ hourElement.innerHTML = `${hour}:`;
 let minutesElement = document.querySelector("#minutes");
 minutesElement.innerHTML = `${minutes}`;
 
+function displayForecast(){
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function(day){
+    forecastHTML = forecastHTML + `<div class="col-2">
+  <p class="forecast-day">${day}</p>
+  <img src="#" class="icon-temperature" />
+  <div class="forecast-temperature">
+  <span class="weather-forecast-temperature-max">12º</span>
+  <span class="weather-forecast-temperature-min">10º</span>
+  </div>
+  </div> `
+  })
+
+  forecastHTML= forecastHTML+ `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -105,3 +124,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertCelsius);
 
 searchCity("New York");
+displayForecast();
